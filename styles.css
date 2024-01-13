@@ -1,60 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @font-face {
-    font-family: vate;
-    src: url(./Ashelia.otf);
+  font-family: vate;
+  src: url(./Ashelia.otf);
 }
 
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(255,243,226);
-    color: #FCAEAE;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 243, 226);
+  color: #fcaeae;
 }
 
-h1{
-    color: #FF6666 ;
-    font-family: vate;
-    font-size: 3rem;
+h1 {
+  color: #ff6666;
+  font-family: vate;
+  font-size: 3rem;
 }
 
-input{
-    outline: none !important;
-    color: #FCAEAE !important;
+input {
+  outline: none !important;
+  color: #fcaeae !important;
 }
 
-input::placeholder{
-    color: #FCAEAE !important;
+input::placeholder {
+  color: #fcaeae !important;
 }
 
-.mb-3{
-    display: flex;
-    flex-direction: column;
+.mb-3 {
+  display: flex;
+  flex-direction: column;
 }
 
-.btn{
-    background-color: #FCAEAE;
-    --#{$prefix}btn-bg: #fafafa;
-    color: white;
+.today{
+  background-color: #fcaeae !important;
+  animation: 1s attend ease infinite;
 }
 
-textarea{
-    outline: none;
-    border-radius: .3rem;
-    border-color: #FCAEAE;
-}
-.table{
-    --bs-table-color-state: #ff6666;
+@keyframes attend {
+  0%,100%{
+    background-color: #fafafa;
+  }
+  50%{
+    background-color: #fcaeae;
+  }
 }
 
-.table td{
-    flex-grow: 1;
+thead tr{
+  background-color: red;
+}
+
+.btn {
+  background-color: #fcaeae;
+  color: white;
+}
+
+
+
+textarea {
+  outline: none;
+  border-radius: 0.3rem;
+  border-color: #fcaeae;
+  color: #ff6666;
+}
+.table {
+  --bs-table-color-state: #ff6666;
+}
+
+.table td {
+  flex-grow: 1;
 }
